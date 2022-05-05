@@ -1,0 +1,28 @@
+package estrutura_repeticao;
+
+import java.util.Scanner;
+
+public class DO_WHILE {
+
+	public static void main(String[] args) {
+        try (Scanner ler = new Scanner(System.in)) {
+			int num, t, i;
+      
+			do {
+			    System.out.printf("Digite um número positivo: ");
+			    num = ler.nextInt();
+			}
+			while(num <= 0);
+      
+			i = 1;
+      
+			do {
+			    t = num * i;
+			    System.out.printf("\n%d X %d = %d", num, i, t);
+			    i++;            
+			}
+			while (i <= 10);
+		}
+    }
+}
+
